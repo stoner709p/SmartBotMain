@@ -23,8 +23,8 @@ module.exports.run = async (bot, message, args) => {
       .addField("Member Amount", `${memberscount}`)
       .setTimestamp()
       .setFooter(
-        "Sanic The (Real) Hedgehog",
-        "https://cdn.discordapp.com/avatars/444644760322572297/795c7e14ef90d0ee49183823a383a263.png?size=2048"
+        bot.owner.username,
+        `https://cdn.discordapp.com/avatars/444644760322572297/${bot.owner.avatar}.png?size=2048`
       )
       .addField(
         "For more info:",

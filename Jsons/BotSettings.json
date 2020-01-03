@@ -1,6 +1,8 @@
 {
 	"MainPrefix": "b!",
     "TestingPrefix": "!",
-    "MainToken": "NTg1OTI1Mjk0MzM0OTM1MDkz.Xfw4oQ.4HtXIDs-F62ncvOq900qxsT6pUo",
-    "TestingToken": "NTg2MjkyMjQxMTc0MzY0MTYw.XfxCgw.sFHvXseAo_oUlBwnEq1wyyFaYbY"
+    "MainToken": "NTg1OTI1Mjk0MzM0OTM1MDkz.XguJ-Q.0lC9uvR908NUweZbr5ZgYj9LpOU",
+    "TestingToken": "NTg2MjkyMjQxMTc0MzY0MTYw.XfxCgw.sFHvXseAo_oUlBwnEq1wyyFaYbY",
+    "ownerGuildID": "643323696693510154",
+    "ownerID": "444644760322572297"
 }

@@ -12,11 +12,11 @@ module.exports.run = async (bot, message, args) => {
       )
       .setColor("#ffffff")
       .addField("[Bot] Owner Commands:", "Eval")
+      .addField("[Guild] Owner Commands:", "Settings, Announce")
       .addField(
         "Admin Commands:",
-        "Mute/Unmute, Ban, Kick, Purge, Lock/Unlock, SendEmbed"
+        "Mute/Unmute, Ban, Kick, Purge, Lock/Unlock, SendEmbed, Poll"
       )
-      .addField("[Guild] Owner Commands:", "Settings, Announce")
       .addField(
         "User Commands:",
         "Userinfo, Shiba, Subreddit, Kill, ServerInfo, Revive, 8ball, BotInfo, Suggest"
@@ -27,12 +27,12 @@ module.exports.run = async (bot, message, args) => {
       )
       .addField(
         "Settings(Arguments)",
-        "Types: Prefix(String less than 4 numbers or 'none'), Logs(Mention logs channel or 'none')"
+        "Types: Prefix(String less than 4 numbers or 'none'), Logs(Mention logs channel or 'none'), Welcome(Mention welcome/goodbye channel or 'none')"
       )
       .setTimestamp()
       .setFooter(
-        "Sanic The (Real) Hedgehog",
-        "https://cdn.discordapp.com/avatars/444644760322572297/795c7e14ef90d0ee49183823a383a263.png?size=2048"
+        bot.owner.username,
+        `https://cdn.discordapp.com/avatars/444644760322572297/${bot.owner.avatar}.png?size=2048`
       )
       .addField(
         "For more help:",

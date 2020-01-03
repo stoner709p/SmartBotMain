@@ -32,8 +32,8 @@ module.exports.run = async (bot, message, args) => {
       .setImage(user.avatarURL)
       .setTimestamp()
       .setFooter(
-        "Sanic The (Real) Hedgehog",
-        "https://cdn.discordapp.com/avatars/444644760322572297/795c7e14ef90d0ee49183823a383a263.png?size=2048"
+        bot.owner.username,
+        `https://cdn.discordapp.com/avatars/444644760322572297/${bot.owner.avatar}.png?size=2048`
       );
     // Sends the embed into the channel where the message is sent.
     message.channel.send(embed);

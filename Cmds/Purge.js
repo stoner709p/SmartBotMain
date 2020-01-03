@@ -21,13 +21,13 @@ module.exports.run = async (bot, message, args) => {
     message.channel
       .bulkDelete(amount)
       .then(messages =>
-        message.reply(`${messages.size - 1} message(s) have been deleted!`)
+        message.reply(`${messages.size - 1} message(s) have been deleted!`).then(message => {
+      setTimeout(yes =>{
+        message.delete();
+      }, 5000)
+    })
       )
       .catch(console.error);
-    setTimeout(function() {
-      let botMember = message.guild.members.get("585925294334935093");
-      botMember.lastMessage.delete();
-    }, 5000);
   } catch (e) {
     if (e) {
       fs.writeFile("./Error.txt", e, err => {
